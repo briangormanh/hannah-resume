@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah Uhley - Resume</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3ede2;
+    color: #2b2723;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  h1 { font-family: Georgia, serif; font-size: 34px; letter-spacing: 2px; }
+  p.sub { color: #6a6157; margin: 8px 0 32px; }
+  .cards { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; }
+  a.card {
+    display: block;
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 26px 24px;
+    text-decoration: none;
+    color: #2b2723;
+    box-shadow: 0 6px 22px rgba(0,0,0,.12);
+    transition: transform .15s, box-shadow .15s;
+    border-top: 5px solid var(--c);
+  }
+  a.card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+  .card h2 { font-family: Georgia, serif; font-size: 20px; margin-bottom: 6px; }
+  .card span { color: #6a6157; font-size: 14px; }
+  .swatch { display:inline-block; width:14px; height:14px; border-radius:3px; background:var(--c); vertical-align:middle; margin-right:7px; }
+</style>
+</head>
+<body>
+  <h1>HANNAH UHLEY</h1>
+  <p class="sub">Senior Financial Consultant &middot; High-Ticket Sales Closer</p>
+  <div class="cards">
+    <a class="card" href="classic.html" style="--c:#b08d5b">
+      <h2><span class="swatch"></span>Classic</h2>
+      <span>Refined bronze &amp; serif, single column.</span>
+    </a>
+    <a class="card" href="coral.html" style="--c:#ef5a3c">
+      <h2><span class="swatch"></span>Coral</h2>
+      <span>Two-column with peach sidebar.</span>
+    </a>
+  </div>
+</body>
+</html>

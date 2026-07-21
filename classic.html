@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hannah Uhley - Resume</title>
+<style>
+  :root {
+    --ink: #2b2723;
+    --muted: #6a6157;
+    --accent: #b08d5b;      /* warm bronze */
+    --line: #d8cfc1;
+    --highlight: #f3ede2;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: #8f8577; }
+
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: var(--ink);
+    font-size: 9.9pt;
+    line-height: 1.34;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 24px auto;
+    background: #fff;
+    padding: 0.42in 0.58in 0.45in;
+    box-shadow: 0 6px 30px rgba(0,0,0,.28);
+  }
+
+  /* ---------- Header ---------- */
+  header { margin-bottom: 12px; }
+  .name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  .title {
+    font-family: Georgia, serif;
+    font-size: 11pt;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 6px;
+    font-weight: 700;
+  }
+  .contact {
+    margin-top: 9px;
+    padding-top: 8px;
+    border-top: 2px solid var(--line);
+    font-size: 9.1pt;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 16px;
+  }
+  .contact a { color: var(--muted); text-decoration: none; }
+
+  /* ---------- Highlights ---------- */
+  .highlights { display: flex; gap: 9px; margin: 13px 0 4px; }
+  .hl {
+    flex: 1;
+    background: var(--highlight);
+    border-left: 3px solid var(--accent);
+    padding: 8px 11px;
+  }
+  .hl .num {
+    font-family: Georgia, serif;
+    font-size: 16pt;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .hl .lbl {
+    font-size: 8.3pt;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    margin-top: 4px;
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 13px; }
+  h2 {
+    font-family: Georgia, serif;
+    font-size: 11.5pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+  .summary { text-align: justify; }
+
+  /* ---------- Experience ---------- */
+  .company { margin-bottom: 11px; }
+  .company:last-child { margin-bottom: 0; }
+  .co-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+  }
+  .co-name { font-family: Georgia, serif; font-weight: 700; font-size: 11pt; }
+  .co-loc { color: var(--muted); font-size: 8.9pt; }
+
+  .role-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .role-title { color: var(--accent); font-weight: 700; font-size: 9.9pt; }
+  .role-date { color: var(--muted); font-size: 8.7pt; white-space: nowrap; }
+
+  ul { list-style: none; margin-top: 3px; }
+  li { position: relative; padding-left: 14px; margin-bottom: 2px; }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 2px; top: 6px;
+    width: 4.5px; height: 4.5px;
+    background: var(--accent);
+    transform: rotate(45deg);
+  }
+  li b { font-weight: 700; }
+
+  /* ---------- Skills / Education ---------- */
+  .two-col { display: grid; grid-template-columns: 1.5fr 1fr; gap: 26px; }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 16px; }
+  .skill { position: relative; padding-left: 14px; font-size: 9.4pt; }
+  .skill::before {
+    content: "";
+    position: absolute;
+    left: 2px; top: 5px;
+    width: 4.5px; height: 4.5px;
+    background: var(--accent);
+    transform: rotate(45deg);
+  }
+  .edu-item { margin-bottom: 7px; }
+  .edu-item .d { font-weight: 700; }
+  .edu-item .s { color: var(--muted); font-size: 9pt; }
+
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: auto; padding: 0.35in 0.5in; }
+    @page { size: letter; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="name">HANNAH UHLEY</div>
+    <div class="title">Senior Financial Consultant &nbsp;&middot;&nbsp; High-Ticket Sales Closer</div>
+    <div class="contact">
+      <span>Raleigh-Durham, NC</span>
+      <span>919.497.2085</span>
+      <span><a href="mailto:hannahuhley@gmail.com">hannahuhley@gmail.com</a></span>
+      <span><a href="https://www.linkedin.com/in/hannah-uhley-7958a9146/">linkedin.com/in/hannah-uhley</a></span>
+    </div>
+  </header>
+
+  <div class="highlights">
+    <div class="hl"><div class="num">$50M+</div><div class="lbl">Closed in Enrollments</div></div>
+    <div class="hl"><div class="num">+30%</div><div class="lbl">Sales Productivity Lift</div></div>
+    <div class="hl"><div class="num">12+</div><div class="lbl">Agents Led &amp; Coached</div></div>
+  </div>
+
+  <section style="margin-top:12px">
+    <h2>Profile</h2>
+    <p class="summary">Senior sales professional and high-ticket closer with $50M+ in closed enrollments. Analytical, energetic, and detail-oriented, dedicated to a growth mindset, building culture, and aligning myself with companies' goals and aspirations. Focused on making a positive impact daily and assisting clients in finding the best possible path to financial freedom.</p>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="company">
+      <div class="co-line">
+        <span class="co-name">Americor</span>
+        <span class="co-loc">Remote</span>
+      </div>
+      <div class="role-line">
+        <span class="role-title">Senior Financial Consultant</span>
+        <span class="role-date">Jun 2025 &ndash; Present</span>
+      </div>
+      <ul>
+        <li>Consult with individuals carrying high-balance debt, negotiate creditor balances on their behalf, and close their enrollment into a structured debt-resolution program.</li>
+        <li>Build trust quickly with financially stressed prospects and convert inbound and outbound leads into signed clients on a path to financial freedom.</li>
+      </ul>
+    </div>
+
+    <div class="company">
+      <div class="co-line">
+        <span class="co-name">Beyond Finance</span>
+        <span class="co-loc">Remote</span>
+      </div>
+
+      <div class="role-line">
+        <span class="role-title">Sales Manager II</span>
+        <span class="role-date">Jun 2024 &ndash; Apr 2025</span>
+      </div>
+      <ul>
+        <li><b>Led and mentored a team of 12+ sales agents</b>, hosting weekly group and individual training sessions (soft skills, call reviews, metric analysis, trends).</li>
+        <li>Leveraged CRM data to analyze sales trends, optimize team performance, and forecast opportunities, <b>improving sales productivity by 30%</b>.</li>
+        <li>Developed and implemented sales processes that exceeded performance targets; ran monthly performance reviews, corrective action, and improvement plans, plus live call-monitoring coaching and performance-based incentives to drive revenue.</li>
+      </ul>
+
+      <div class="role-line">
+        <span class="role-title">Certified Debt Specialist</span>
+        <span class="role-date">Oct 2021 &ndash; Apr 2025</span>
+      </div>
+      <ul>
+        <li>Qualified, handled, and converted inbound and outbound leads; managed the sales pipeline and insertion of new leads.</li>
+        <li>Assessed each client's financial situation and presented solutions, including enrollment into the debt-resolution program.</li>
+        <li>Maintained a consultative relationship throughout the process, providing accurate financial analysis while following policies and procedures.</li>
+      </ul>
+
+      <div class="role-line">
+        <span class="role-title">Sales Training Specialist</span>
+        <span class="role-date">Aug 2022 &ndash; Jan 2023</span>
+      </div>
+      <ul>
+        <li>Delivered daily training to new-hire classes of 15-25 agents, developing coaching plans, tutorials, and knowledge-retention testing.</li>
+        <li>Developed individual results through coaching and performance-improvement plans, analyzing training performance to transition underproducing agents.</li>
+      </ul>
+    </div>
+
+    <div class="company">
+      <div class="co-line">
+        <span class="co-name">Merck &amp; Co., Inc.</span>
+        <span class="co-loc">Wilson, NC</span>
+      </div>
+      <div class="role-line">
+        <span class="role-title">Sales Executive Assistant</span>
+        <span class="role-date">May 2013 &ndash; Nov 2017</span>
+      </div>
+      <ul>
+        <li>Created and managed capital expense, purchase, and maintenance work orders for quality and engineering, tracked and monitored against departmental budgets year-round.</li>
+        <li>Verified approvals and matched invoices to purchase orders for vendor invoicing; processed and controlled samples, sample documentation, and SOP control documents.</li>
+        <li>Managed inventory and flow of product components, finished goods, and lab supplies; arranged foreign and domestic travel, visa/passport requirements, and expense reports.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Key Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Sales Management</div>
+        <div class="skill">Account Management</div>
+        <div class="skill">CRM (Salesforce, Bedrock)</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Project Management</div>
+        <div class="skill">Executive Support</div>
+        <div class="skill">Microsoft Office</div>
+        <div class="skill">ADP</div>
+        <div class="skill">SAP (Travel + Invoice)</div>
+        <div class="skill">Highly Organized</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education &amp; Certifications</h2>
+      <div class="edu-item">
+        <div class="d">High School Diploma</div>
+        <div class="s">Louisburg High School &middot; June 2012</div>
+      </div>
+      <div class="edu-item">
+        <div class="d">IAPDA Certified Debt Specialist</div>
+        <div class="s">Intl. Assoc. of Professional Debt Arbitrators</div>
+      </div>
+    </section>
+  </div>
+
+</div>
+</body>
+</html>
